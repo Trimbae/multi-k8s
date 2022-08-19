@@ -7,3 +7,12 @@ before_install:
   - source $HOME/google-cloud-sdk/path.bash.inc
   - gcloud components update kubectl
   - cloud auth activate-service-account --key-file service-account.json
+#   - gcloud config set project aforza-matt-kubernetes-course
+#   - gcloud config set compute/zone europe-west2-a
+#   - gcloud container clusters get-credentials multi-cluster
+#   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+#   - docker build -t mtrimby/react-test -f ./client/Dockerfile.dev /client
+
+# script:
+#   - docker run -e CI=true mtrimby/react-test npm test
+
